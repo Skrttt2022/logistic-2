@@ -1,6 +1,5 @@
 <?php
-include(__DIR__ . '/connect.db.php');
-
+include('../../logistic-2/Layouts/Connection.php');
 echo date('d-m-Y');
 // $sql = "SHOW TABLES";
 //     $result = $db->query($sql);

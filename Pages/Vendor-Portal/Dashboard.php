@@ -72,9 +72,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
     <div class="w-full px-6 sm:w-1/2 xl:w-1/3">
         <div class="flex items-center px-5 py-6">
             <div class="p-3 bg-indigo-600 bg-opacity-75 rounded-full">
-            <svg class="h-10 w-10 text-white"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
-  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"/>
-</svg>
+            <svg class="h-10 w-10 text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <rect x="4" y="5" width="16" height="16" rx="2" />  <line x1="16" y1="3" x2="16" y2="7" />  <line x1="8" y1="3" x2="8" y2="7" />  <line x1="4" y1="11" x2="20" y2="11" />  <rect x="8" y="15" width="2" height="2" /></svg>
 
                     <path d="M18.2 9.08889C18.2 11.5373 16.3196 13.5222 14 13.5222C11.6804 13.5222 9.79999 11.5373 9.79999 9.08889C9.79999 6.64043 11.6804 4.65556 14 4.65556C16.3196 4.65556 18.2 6.64043 18.2 9.08889Z" fill="currentColor">
 
@@ -98,8 +96,8 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
             </div>
             <div class="mx-5">
                 <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-                <a class href="/logistic-2/Pages/Vendor-Portal/subcontractor.php"
-                class="text-2xl font-semibold text-gray-700 ">SUBCONTRACT</a>
+                <a class href="/logistic-2/Pages/Vendor-Portal/Events.php"
+                class="text-2xl font-semibold text-gray-700 ">Coming Events</a>
                
                 <button>
             </div>
@@ -332,7 +330,7 @@ orders
             <div class="max-w-sm w-full shadow-lg">
                 <div class="md:p-8 p-5 dark:bg-gray-800 bg-blue-300 rounded-t">
                     <div class="px-4 flex items-center justify-between">
-                        <span  tabindex="0" class="focus:outline-none  text-base font-bold dark:text-gray-100 text-gray-800">October 2020</span>
+                        <span  tabindex="0" class="focus:outline-none  text-base font-bold dark:text-gray-100 text-gray-800">Feb 2023</span>
                         <div class="flex items-center">
                             <button aria-label="calendar backward" class="focus:text-gray-400 hover:text-gray-400 text-gray-800 dark:text-gray-100">
                             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -587,11 +585,8 @@ orders
             </div>
         </div>
     </div>
-    
-    <div class="flex-auto p-4">
-        
-        <div>
-            <canvas id="chart-line" height="600" width="1368" style="display: block; box-sizing: border-box; height: 300px; width: 684px;"></canvas>
+     <div>
+            <canvas id="chart-line" height="600" width="1368" style="display: block; box-sizing: border-box; height: 10px; width: 684px;"></canvas>
         </div>
     </div>
 </div></div>
@@ -602,9 +597,11 @@ orders
         <div class="flex">
             <div class="relative">
                 <select class="block w-full h-full px-4 py-2 pr-8 leading-tight text-gray-700 bg-white border border-gray-400 rounded-l appearance-none focus:outline-none focus:bg-white focus:border-gray-500">
-                    <option>5</option>
-                    <option>10</option>
-                    <option>20</option>
+                    <option>Admin</option>
+                    <option>Super Admin</option>
+                    <option>Supplier</option>
+                    <option>Requestor</option>
+                    <option>Auditor</option>
                 </select>
                 <div class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pointer-events-none">
                     <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">

@@ -21,11 +21,66 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
             </div>
          <!-- content  start-->
          <body class="bg-purple-200 flex justify-center items-center h-screen">
+        
          <div class=" h-[calc(100%-50px)]   mt-14 border ">
                 <h1 class=' p-4 md:text-2xl text-xl font-semibold text-indigo-500 tracking-[1.5px]'>Fleet Management</h1>
                     <div>
 
                     <!-- content body -->
+                    <div class="flex flex-wrap -mx-6">
+                      <div class="w-full px-6 sm:w-1/2 xl:w-1/3">
+                        <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
+                          <div class="p-3 bg-indigo-600 bg-opacity-75 rounded-full">
+                          <svg class="h-8 w-8 text-white"  fill="none" viewBox="0 0 24 24" stroke="currentColor">
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
+  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+</svg>
+
+
+                          </div>
+                          <div class="mx-5">
+                          <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                          <a class href="/logistic-2/Pages/Fleet-Management/vehicle_tracking.php">
+  tracking Vehicles</a>
+</button>
+</div>
+                        </div>
+                      </div>
+                      <div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 sm:mt-0">
+                        <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
+                          <div class="p-3 bg-blue-600 bg-opacity-75 rounded-full">
+                            <svg class="h-8 w-8 text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  
+                              <path stroke="none" d="M0 0h24v24H0z"/>  
+                              <path d="M14 8v-2a2 2 0 0 0 -2 -2h-7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h7a2 2 0 0 0 2 -2v-2" /> 
+                               <path d="M20 12h-13l3 -3m0 6l-3 -3" />
+                              </svg>
+                        </div>
+                        <div class="mx-5">
+                        <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                          <a class href="/logistic-2/Pages/Fleet-Management/vehicles_inbound.php">
+  Vehicles Inbound</a>
+</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 xl:mt-0">
+                      <div class="flex items-center px-5 py-6 bg-white rounded-md shadow-sm">
+                        <div class="p-3 bg-pink-600 bg-opacity-75 rounded-full">
+                        <svg class="h-8 w-8 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"> 
+                           <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /> 
+                            <polyline points="15 3 21 3 21 9" />
+                              <line x1="10" y1="14" x2="21" y2="3" />
+                            </svg>
+                        </div>
+                        <div class="mx-5">
+                        <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
+                        <a class href="/logistic-2/Pages/Fleet-Management/vehicles_outbound.php">
+  Vehicles Outbound</a>
+</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                     <section class="text-gray-600 body-font relative">
   <div class="absolute inset-0 bg-gray-300">
     <iframe width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" title="map" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d73428.81258929975!2d121.01945960336666!3d14.705432947478645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ba0942ef7375%3A0x4a9a32d9fe083d40!2sQuezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1675759419411!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
