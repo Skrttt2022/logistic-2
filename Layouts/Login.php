@@ -15,7 +15,7 @@ session_start();
           $_SESSION["password"]=$row["Pass"];
           echo "login success";
 
-          header("location:/logistic-2/Pages/Vendor-Portal/Dashboard.php");
+          header("location:/logistic-2/Pages/Vendor-Portal/Dashboard2.php#");
            
         }
         

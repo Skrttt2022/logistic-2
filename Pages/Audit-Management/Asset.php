@@ -1,10 +1,32 @@
 <?php include('../../Layouts/header.php');
 include('../../Layouts/Connection.php');
+
 session_start();
-if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
+
+$tables = [
+    array('name'=>'Jan','date'=>'01-2023'),
+    array('name'=>'Feb','date'=>'02-2023'),
+    array('name'=>'Mar','date'=>'02-2023'),
+    array('name'=>'Apr','date'=>'02-2023'),
+    array('name'=>'May','date'=>'02-2023'),
+    array('name'=>'Jun','date'=>'02-2023'),
+    array('name'=>'Jul','date'=>'02-2023'),
+    array('name'=>'Aug','date'=>'02-2023'),
+    array('name'=>'Sep','date'=>'02-2023'),
+    array('name'=>'Oct','date'=>'02-2023'),
+    array('name'=>'Nov','date'=>'02-2023'),
+    array('name'=>'Dec','date'=>'02-2023'),
+
+];
+
+
+if (isset($_SESSION['email'], $_SESSION['password'])) {  
+  
+  $GLOBALS['db'] = $db;
+ 
+  ?>
 <header>
 <body>
-
 <main class="w-screen h-screen ">
 
     <div class="flex relative h-full w-full ">
@@ -64,21 +86,22 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
                    </div>
                         <div class="mx-5">
                           <h4 class="text-2xl font-semibold text-gray-700">Auditing</h4>
-                           
+                          
                             </div>
                         </div>
          </div>
     <div class="w-full px-6 mt-6 sm:w-1/2 xl:w-1/3 sm:mt-0">
          <div class="flex items-center px-5 py-6">
             <div class="p-3 bg-blue-600 bg-opacity-75 rounded-full">
-            <svg class="h-8 w-8 text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M3 21v-13l9-4l9 4v13" />  <path d="M13 13h4v8h-10v-6h6" />  <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" /></svg>
+            <svg class="h-8 w-8 text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"> 
+                 <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M3 21v-13l9-4l9 4v13" />  <path d="M13 13h4v8h-10v-6h6" />  <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" /></svg>
                         </div>
                         <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-                        <a class href="/logistic-2/Pages/Audit-Management/Audit%20Item.php">
-                        <div class="mx-5">
+                        <div class="mx-5"><a href="/logistic-2/Pages/Audit-Management/Audit%20Item.php">
+
                             <h4 class="text-2xl font-semibold text-white-700">Warehouse</h4>
-                            <div class="text-white-500">Auditing</div>
-</a>
+                            <div class="text-white-500">Auditing</div></a>
+
                         </div>
                     </div>
                 </div>
@@ -92,18 +115,35 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
                         </div>
                         <button class="bg-yellow-500 hover:bg-yellow-400 text-white font-bold py-2 px-4 border-b-4 border-yellow-700 hover:border-yellow-500 rounded">
                         <div class="mx-5">
+                            <a class href="/logistic-2/Pages/Audit-Management/Asset.php">
                             <h4 class="text-2xl font-semibold text-white-700">Asset</h4>
                             <div class="text-white-500">Auditing</div>
+</a>
 </button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-                            <div class="mt-8">
+        <div class="mt-8">
 
-                            </div>
-                            <div class="flex flex-col mt-8">
+        </div>
+        <div>
+            <h2>Month Record</h2>
+            <select>
+                <option value="Choose">Choose</option>
+                
+            <?php 
+                for ($i=0; $i < count( $tables ) ; $i++) { 
+              ?>
+              <option value="<?php echo $tables[$i]['date']; ?>"><?php echo  $tables[$i]['name'];?></option>
+        
+         <?php 
+            } 
+            ?>
+            </select>
+        </div>
+        <div class="flex flex-col mt-8">
       <div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
          <div class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200 shadow sm:rounded-lg">
           <table class="min-w-full">
@@ -128,9 +168,8 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
                           <tbody class="bg-white">
                           <tr>
                                <td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
-                            <div class="flex items-center">
-                                <div class="flex-shrink-0 w-10 h-10">
-                    
+                           
+                             <div class="ml-4">
                          <div class="text-sm font-medium leading-5 text-gray-900"><?php echo $row['item']?></div>
                           </div>
                           </div>
@@ -141,12 +180,14 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
      <td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
      <div class="text-sm leading-5 text-gray-900"><?php echo $row['bad_item']?></div>
                     </td>
-            <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><?php echo $row['formatted_date']?></td>
+            <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><?php echo $row['date']?></td>
                        <td class="px-6 py-4 text-sm font-medium leading-5 text-right border-b border-gray-200 whitespace-nowrap">
-                    <a href="/logistic-2/excel/" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    <a href="/logistic-2/excelasset/asset_index.php" class="text-indigo-600 hover:text-indigo-900">Edit</a>
                            </td>
                             </tr>
+
                           
+                               </tr>
                              </tbody>
                              <?php } }?>
                              </table>
@@ -167,5 +208,6 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
 header("location:../../Layouts/Login.php");
 session_destroy();
 }
+
 unset($_SESSION['prompt']);
 mysqli_close($db); ?>

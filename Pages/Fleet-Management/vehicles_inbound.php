@@ -54,9 +54,7 @@ if (mysqli_num_rows($result)) {
                     <tbody class="bg-white">
                         <tr>
                             <td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
-                              
                                    
-                                      
                                     </div>
                                     <div class="ml-4">
                                         <div class="text-sm font-medium leading-5 text-gray-900"><?php echo $row['Driver']?></div>

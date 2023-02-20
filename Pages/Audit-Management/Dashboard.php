@@ -121,7 +121,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
 <div class="flex-none w-2/2 max-w-full px-3">
 <div>
     <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-<a class="mb-0 font-sans font-semibold leading-normal text-size-sm" href="">Audit External</a>
+<a class="mb-0 font-sans font-semibold leading-normal text-size-sm" href="/logistic-2/Pages/Audit-Management/Audit_External.php">Audit External</a>
 
     </button>
 </div>

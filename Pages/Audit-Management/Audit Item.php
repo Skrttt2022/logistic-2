@@ -1,6 +1,25 @@
 <?php include('../../Layouts/header.php');
 include('../../Layouts/Connection.php');
+
 session_start();
+
+$tables = [
+    array('name'=>'Jan','date'=>'01-2023'),
+    array('name'=>'Feb','date'=>'02-2023'),
+    array('name'=>'Mar','date'=>'02-2023'),
+    array('name'=>'Apr','date'=>'02-2023'),
+    array('name'=>'May','date'=>'02-2023'),
+    array('name'=>'Jun','date'=>'02-2023'),
+    array('name'=>'Jul','date'=>'02-2023'),
+    array('name'=>'Aug','date'=>'02-2023'),
+    array('name'=>'Sep','date'=>'02-2023'),
+    array('name'=>'Oct','date'=>'02-2023'),
+    array('name'=>'Nov','date'=>'02-2023'),
+    array('name'=>'Dec','date'=>'02-2023'),
+
+];
+
+
 if (isset($_SESSION['email'], $_SESSION['password'])) {  
   
   $GLOBALS['db'] = $db;
@@ -105,10 +124,25 @@ if (isset($_SESSION['email'], $_SESSION['password'])) {
                 </div>
             </div>
         </div>
-                            <div class="mt-8">
+        <div class="mt-8">
 
-                            </div>
-                            <div class="flex flex-col mt-8">
+        </div>
+        <div>
+            <h2>Month Record</h2>
+            <select>
+                <option value="Choose">Choose</option>
+                
+            <?php 
+                for ($i=0; $i < count( $tables ) ; $i++) { 
+              ?>
+              <option value="<?php echo $tables[$i]['date']; ?>"><?php echo  $tables[$i]['name'];?></option>
+        
+         <?php 
+            } 
+            ?>
+            </select>
+        </div>
+        <div class="flex flex-col mt-8">
       <div class="py-2 -my-2 overflow-x-auto sm:-mx-6 sm:px-6 lg:-mx-8 lg:px-8">
          <div class="inline-block min-w-full overflow-hidden align-middle border-b border-gray-200 shadow sm:rounded-lg">
           <table class="min-w-full">
@@ -145,9 +179,9 @@ if (isset($_SESSION['email'], $_SESSION['password'])) {
      <td class="px-6 py-4 border-b border-gray-200 whitespace-nowrap">
      <div class="text-sm leading-5 text-gray-900"><?php echo $row['bad_item']?></div>
                     </td>
-            <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><?php echo $row['formatted_date']?></td>
+            <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><?php echo $row['date']?></td>
                        <td class="px-6 py-4 text-sm font-medium leading-5 text-right border-b border-gray-200 whitespace-nowrap">
-                    <a href="/logistic-2/excel/" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                    <a href="/logistic-2/excelwarehouse/" class="text-indigo-600 hover:text-indigo-900">Edit</a>
                            </td>
                             </tr>
 
@@ -173,5 +207,6 @@ if (isset($_SESSION['email'], $_SESSION['password'])) {
 header("location:../../Layouts/Login.php");
 session_destroy();
 }
+
 unset($_SESSION['prompt']);
 mysqli_close($db); ?>

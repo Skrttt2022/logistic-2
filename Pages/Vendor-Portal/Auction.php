@@ -40,7 +40,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
 <main class="flex-1 overflow-x-hidden overflow-y-auto bg-gray-200">
     <div class="container mx-auto px-6 py-8">
         <div>
-        <a href="/logistic-2/Pages/Vendor-Portal/Dashboard.php">
+        <a href="/logistic-2/Pages/Vendor-Portal/Dashboard2.php#">
             
         </button>
 <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-full text-sm p-2.5 text-center inline-flex items-center mr-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">

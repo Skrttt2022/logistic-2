@@ -1,9 +1,9 @@
 <?php
+require '../vendor/autoload.php';
+
 include('../../logistic-2/Layouts/Connection.php');
-require_once(__DIR__ . '/logistic-2/Pages/Audit-Management/Audit%20Item.php');
+// require_once(__DIR__ . '/logistic-2/Pages/Audit-Management/Audit%20Item.php');
 $reader = new \PhpOffice\PhpSpreadsheet\Reader\Xlsx();
-
-
 
 
 $filename = $_FILES['upload_file']['name'];
@@ -21,19 +21,22 @@ function deleteRows($db){
     $result = $db->query($sql);
 }
 
-for ($i=0; $i < count($data); $i++) { 
-        $date = date('m-Y');
-        $item = $data[$i][0];
-        $good_item = $data[$i][0];
-        $bad_item = $data[$i][0];
-        $date = $data[$i][0];
-        $sql = "INSERT INTO `warehouse_auditing`(`item`, `good_item`,`bad_item`, `date`) VALUES (' $item','$good_item','$bad_item','$date')";
-        $db->query($sql);
-}
+for ($i=0; $i < count($data); $i++) {
+    if($i != 0){
+            $date = date('m-Y');
+            $item = $data[$i][0];
+            $good_item = $data[$i][1];
+            $bad_item = $data[$i][2];
+            
+            $sql = "INSERT INTO `warehouse_auditing`(`item`, `good_item`,`bad_item`,`date`) VALUES ('$item','$good_item','$bad_item','$date')";
+            $db->query($sql);
+            //
+        }
+    }
 
 $response = array(
     'message'=>$_FILES['upload_file'],
-    "success"=>true
+    "success"=>$data 
 );  
 
 echo json_encode($response);

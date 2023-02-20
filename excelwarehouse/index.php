@@ -1,14 +1,23 @@
 <?php
 include('../../logistic-2/Layouts/Connection.php');
-echo date('d-m-Y');
 // $sql = "SHOW TABLES";
 //     $result = $db->query($sql);
 //     $tables = $result->fetch_all(MYSQLI_ASSOC);
 //
-
 $tables = [
     array('name'=>'Jan','date'=>'01-2023'),
-    array('name'=>'Feb','date'=>'02-2023')
+    array('name'=>'Feb','date'=>'02-2023'),
+    array('name'=>'Mar','date'=>'02-2023'),
+    array('name'=>'Apr','date'=>'02-2023'),
+    array('name'=>'May','date'=>'02-2023'),
+    array('name'=>'Jun','date'=>'02-2023'),
+    array('name'=>'Jul','date'=>'02-2023'),
+    array('name'=>'Aug','date'=>'02-2023'),
+    array('name'=>'Sep','date'=>'02-2023'),
+    array('name'=>'Oct','date'=>'02-2023'),
+    array('name'=>'Nov','date'=>'02-2023'),
+    array('name'=>'Dec','date'=>'02-2023'),
+
 ]
   
 ?>
