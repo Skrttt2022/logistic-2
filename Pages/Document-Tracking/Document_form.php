@@ -121,36 +121,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
     </div>
 
 </div>
-<div class="mb-6 last:mb-0">
-    <label class="block font-bold mb-2">Receiving Units</label>
-    <div class="">
-        <div class="relative">
-            <select class="px-3 py-2 max-w-full focus:ring focus:outline-none border-gray-700 rounded w-full dark:placeholder-gray-400 h-12 border bg-white dark:bg-slate-800">
-                <option value="[object Object]">--Select--</option>
-                <option value="[object Object]">1</option>
-            <option value="[object Object]">2</option>
-            <option value="[object Object]">3</option>
-            <option value="[object Object]">4</option>
-            <option value="[object Object]">5</option>
-        </select>
-        <!---->
-    </div>
-</div>
-<!---->
-</div>
-<hr class="my-6 -mx-6 dark:border-slate-800 border-t border-gray-100">
-<div class="mb-6 last:mb-0">
-    
-    <label class="block font-bold mb-2">Purposes Of Submission</label>
-    <div class="">
-        <div class="relative">
-            <textarea class="px-3 py-2 max-w-full focus:ring focus:outline-none border-gray-700 rounded w-full dark:placeholder-gray-400 h-24 border bg-white dark:bg-slate-800" placeholder="Purposes or Action to be taken...">                
-            </textarea>
-            <!---->
-        </div>
-    </div>
-</div>
-</div>
+
 <a class href="#">
 <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">
   Cancel

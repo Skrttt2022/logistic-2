@@ -105,196 +105,46 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
                 <div class="col-span-1 md:col-span-2 lg:col-span-4 flex justify-between">
                     <h2 class="text-xs md:text-sm text-gray-700 font-bold tracking-wide md:tracking-wider">
                         Expenses By Category</h2>
-                    <a href="#" class="text-xs text-gray-800 font-semibold uppercase">More</a>
                 </div>
                 <div class="bg-white p-6 rounded-xl border border-gray-50">
                     <div class="flex justify-between items-start">
                         <div class="flex flex-col">
-                            <p class="text-xs text-gray-600 tracking-wide">Foods & Beverages</p>
-                            <h3 class="mt-1 text-lg text-blue-500 font-bold">$ 818</h3>
-                            <span class="mt-4 text-xs text-gray-500">Last Transaction 3 Hours ago</span>
+                            <p class="text-xs text-gray-600 tracking-wide">Product in Warehouse</p>
+                            <h3 class="mt-1 text-lg text-blue-500 font-bold">4,818</h3>
+                            <span class="mt-4 text-xs text-gray-500">Last Auditing 8 hours ago</span>
                         </div>
                         <div class="bg-blue-500 p-2 md:p-1 xl:p-2 rounded-md">
-                            <img src="assets/dish-2.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                        <svg class="h-8 w-8 text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M3 21v-13l9-4l9 4v13" />  <path d="M13 13h4v8h-10v-6h6" />  <path d="M13 21v-9a1 1 0 0 0 -1 -1h-2a1 1 0 0 0 -1 1v3" /></svg>  
                         </div>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-xl border border-gray-50">
                     <div class="flex justify-between items-start">
                         <div class="flex flex-col">
-                            <p class="text-xs text-gray-600 tracking-wide">Groceries</p>
-                            <h3 class="mt-1 text-lg text-green-500 font-bold">$ 8,918</h3>
-                            <span class="mt-4 text-xs text-gray-500">Last Transaction 3 Days ago</span>
+                            <p class="text-xs text-gray-600 tracking-wide">Product in Fleet Management</p>
+                            <h3 class="mt-1 text-lg text-green-500 font-bold">8,918</h3>
+                            <span class="mt-4 text-xs text-gray-500">Last Auditing 3 Days ago</span>
                         </div>
                         <div class="bg-green-500 p-2 md:p-1 xl:p-2 rounded-md">
-                            <img src="assets/grocery.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                        <svg class="h-8 w-8 text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 5H7a2 2 0 0 0 -2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2V7a2 2 0 0 0 -2 -2h-2" />  <rect x="9" y="3" width="6" height="4" rx="2" />  <line x1="9" y1="12" x2="9.01" y2="12" />  <line x1="13" y1="12" x2="15" y2="12" />  <line x1="9" y1="16" x2="9.01" y2="16" />  <line x1="13" y1="16" x2="15" y2="16" /></svg>
                         </div>
                     </div>
                 </div>
                 <div class="bg-white p-6 rounded-xl border border-gray-50">
                     <div class="flex justify-between items-start">
                         <div class="flex flex-col">
-                            <p class="text-xs text-gray-600 tracking-wide">Gaming</p>
-                            <h3 class="mt-1 text-lg text-yellow-500 font-bold">$ 1,223</h3>
+                            <p class="text-xs text-gray-600 tracking-wide">Supplier</p>
+                            <h3 class="mt-1 text-lg text-yellow-500 font-bold"> 69,223</h3>
                             <span class="mt-4 text-xs text-gray-600">Last Transaction 4 Days ago</span>
                         </div>
                         <div class="bg-yellow-500 p-2 md:p-1 xl:p-2 rounded-md">
-                            <img src="assets/gaming.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
+                        <svg class="h-8 w-8 text-white"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" />  <polyline points="3.27 6.96 12 12.01 20.73 6.96" />  <line x1="12" y1="22.08" x2="12" y2="12" /></svg>
                         </div>
                     </div>
                 </div>
-                <div class="bg-white p-6 rounded-xl border border-gray-50">
-                    <div class="flex justify-between items-start">
-                        <div class="flex flex-col">
-                            <p class="text-xs text-gray-600 tracking-wide">Trip & Holiday</p>
-                            <h3 class="mt-1 text-lg text-indigo-500 font-bold">$ 5,918</h3>
-                            <span class="mt-4 text-xs text-gray-500">Last Transaction 1 Month ago</span>
-                        </div>
-                        <div class="bg-indigo-500 p-2 md:p-1 xl:p-2 rounded-md">
-                            <img src="assets/holiday.png" alt="icon" class="w-auto h-8 md:h-6 xl:h-8 object-cover">
-                        </div>
-                    </div>
-                </div>
-            </div>
+              
             <!-- End Second Row -->
-            <!-- Start Third Row -->
-            <div class="grid grid-cols-1 md:grid-cols-5 items-start px-4 xl:p-0 gap-y-4 md:gap-6">
-                <div class="col-start-1 col-end-5">
-                    <h2 class="text-xs md:text-sm text-gray-800 font-bold tracking-wide">Summary Transactions</h2>
-                </div>
-                <div class="col-span-2 bg-white p-6 rounded-xl border border-gray-50 flex flex-col space-y-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 flex justify-between items-center">
-                        <div class="p-4 cursor-pointer border">
-                            <span class="text-xs text-gray-500 font-semibold">Daily</span>
-                            <h2 class="text-gray-800 font-bold tracking-wider">$ 27.80</h2>
-                        </div>
-                        <div class="p-4 cursor-pointer border">
-                            <span class="text-xs text-gray-500 font-semibold">Weekly</span>
-                            <h2 class="text-gray-800 font-bold tracking-wider">$ 192.92</h2>
-                        </div>
-                        <div class="p-4 cursor-pointer border">
-                            <span class="text-xs text-gray-500 font-semibold">Monthly</span>
-                            <h2 class="text-gray-800 font-bold tracking-wider">$ 501.10</h2>
-                        </div>
-                    </div>
-                    <canvas id="myChart"></canvas>
-                </div>
-                <div class="col-span-3 bg-white p-6 rounded-xl border border-gray-50 flex flex-col space-y-6">
-                    <div class="flex justify-between items-center">
-                        <h2 class="text-sm text-gray-600 font-bold tracking-wide">Latest Auditing</h2>
-                        <a href="/logistic-2/Pages/Audit-Management/Audit%20Item.php"
-                            class="px-4 py-2 text-xs bg-blue-100 text-blue-500 rounded uppercase tracking-wider font-semibold hover:bg-blue-300">More</a>
-                    </div>
-                    <ul class="divide-y-2 divide-gray-100 overflow-x-auto w-full">
-                        <li class="py-3 flex justify-between text-sm text-gray-500 font-semibold">
-                            <p class="px-4 font-semibold">Today</p>
-                            <p class="px-4 text-gray-600">Bond paper</p>
-                            <p class="px-4 tracking-wider">Good Item 50</p>
-                            <p class="px-4 text-blue-600">Bad Item 30</p>
-                            <p class="md:text-base text-gray-800 flex items-center gap-2">
-                                1,000
-                                
-                            
-                            </p>
-                        </li>
-                        <li class="py-3 flex justify-between text-sm text-gray-500 font-semibold">
-                            <p class="px-4 font-semibold">Today</p>
-                            <p class="px-4 text-gray-600">BallPen</p>
-                            <p class="px-4 tracking-wider">Godd Item 39</p>
-                            <p class="px-4 text-blue-600">Bad Item 12</p>
-                            <p class="md:text-base text-gray-800 flex items-center gap-2">
-                                590
-                               
-                            </p>
-                        </li>
-                        <li class="py-3 flex justify-between text-sm text-gray-500 font-semibold">
-                            <p class="px-4 font-semibold">Today</p>
-                            <p class="px-4 text-gray-600">Chair</p>
-                            <p class="px-4 tracking-wider">Good Item 3</p>
-                            <p class="px-4 text-blue-600">Bad Item 3</p>
-                            <p class="md:text-base text-gray-800 flex items-center gap-2">
-                                1,500
-                               
-                            </p>
-                        </li>
-                        <li class="py-3 flex justify-between text-sm text-gray-500 font-semibold">
-                            <p class="px-4 font-semibold">Today</p>
-                            <p class="px-4 text-gray-600">Notebook</p>
-                            <p class="px-4 tracking-wider">Good Item 32</p>
-                            <p class="px-4 text-blue-600">Bad Item 12</p>
-                            <p class="md:text-base text-gray-800 flex items-center gap-2">
-                                2,100
-                                
-                            </p>
-                        </li>
-                        <li class="py-3 flex justify-between text-sm text-gray-500 font-semibold">
-                            <p class="px-4 font-semibold">Today</p>
-                            <p class="px-4 text-gray-600">Pencil</p>
-                            <p class="px-4 tracking-wider">Good Item 12</p>
-                            <p class="px-4 text-blue-600">Bad Item 21</p>
-                            <p class="md:text-base text-gray-800 flex items-center gap-2">
-                               790
-                               
-                            </p>
-                        </li>
-                        <li class="py-3 flex justify-between text-sm text-gray-500 font-semibold">
-                            <p class="px-4 font-semibold">Today</p>
-                            <p class="px-4 text-gray-600">Bond Paper 12</p>
-                            <p class="px-4 tracking-wider">Good Item 12</p>
-                            <p class="px-4 text-blue-600">Bad Item 32</p>
-                            <p class="md:text-base text-gray-800 flex items-center gap-2">
-                                3,220
-                                
-                            </p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <!-- End Third Row -->
-        </div>
-    </main>
-    <!-- End Main -->
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.6.2/dist/chart.min.js"></script>
-    <script>
-        const ctx = document.getElementById('myChart').getContext('2d');
-
-        const data = {
-            labels: [
-                'Food & beverages',
-                'Groceries',
-                'Gaming',
-                'Trip & holiday',
-            ],
-            datasets: [{
-                label: 'Total Expenses',
-                data: [148, 150, 130, 170],
-                backgroundColor: [
-                    '#3B82F6',
-                    '#10B981',
-                    '#6366F1',
-                    '#F59E0B'
-                ]
-            }]
-        };
-
-        const config = {
-            type: 'polarArea',
-            data: data,
-            options: {
-                plugins: {
-                    legend: {
-                        position: 'bottom',
-                    },
-                }
-            }
-        };
-
-        const chart = new Chart(ctx, config);
-    </script>
-
-</body>
-
-</div>
+        
 
 </div>
 </main>

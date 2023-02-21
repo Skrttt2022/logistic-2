@@ -27,7 +27,7 @@ if (isset($_POST['update'])) {
   
             $result = mysqli_query($db, $query);
   
-            header("location:/logistic-2/Pages/Vendor-Portal/Dashboard.php");
+            header("location:/logistic-2/Pages/Vendor-Portal/Dashboard2.php#");
           } else {
             $_SESSION['errorMessage'] = "Failed to update profile picture";
           }

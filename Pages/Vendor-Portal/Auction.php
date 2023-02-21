@@ -53,9 +53,10 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
     <div class="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8  2xl:col-span-2">
 <div class="flex items-center justify-between mb-4">
 <div class="flex-shrink-0">
-<span class="text-2xl sm:text-3xl leading-none font-bold text-gray-900">Supplier Item</span>
+<span class="text-2xl sm:text-3xl leading-none font-bold text-gray-900">Auction Item</span>
 <h3 class="text-base font-normal text-gray-500">Auction</h3>
 </div>
+
 <div class="flex items-center justify-end flex-1 text-green-500 text-base font-bold">
 12.5%
 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
@@ -240,15 +241,10 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
 </svg>
 <div class="apexcharts-legend" style="max-height: 210px;"></div>
 <div class="apexcharts-tooltip apexcharts-theme-light" style="left: 233.235px; top: 45.8576px;">
-<div class="apexcharts-tooltip-title" style="font-family: Inter, sans-serif; font-size: 14px;">04 Feb</div>
 <div class="apexcharts-tooltip-series-group apexcharts-active" style="order: 1; display: flex;">
 <span class="apexcharts-tooltip-marker" style="background-color: rgb(6, 148, 162);">
 </span>
-<div class="apexcharts-tooltip-text" style="font-family: Inter, sans-serif; font-size: 14px;">
-<div class="apexcharts-tooltip-y-group">
-    <span class="apexcharts-tooltip-text-y-label">Revenue: </span>
-    <span class="apexcharts-tooltip-text-y-value">$6526</span>
-</div>
+
 <div class="apexcharts-tooltip-goals-group">
     <span class="apexcharts-tooltip-text-goals-label">
 
@@ -389,201 +385,6 @@ Supplier 2
 </tr>
 </tbody>
 </table>
-</div>
- </div>
-</div>
-</div>
-</div>
-<div class="mt-4 w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-<div class="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 ">
-<div class="flex items-center">
-<div class="flex-shrink-0">
-<span class="text-2xl sm:text-3xl leading-none font-bold text-gray-900">2,340</span>
-<h3 class="text-base font-normal text-gray-500">New Supplier this week</h3>
-</div>
-<div class="ml-5 w-0 flex items-center justify-end flex-1 text-green-500 text-base font-bold">
-14.6%
-<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-</svg>
-</div>
-</div>
-</div>
-<div class="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 ">
-<div class="flex items-center">
-<div class="flex-shrink-0">
-<span class="text-2xl sm:text-3xl leading-none font-bold text-gray-900">5,355</span>
-<h3 class="text-base font-normal text-gray-500">Visitors this week</h3>
-</div>
-<div class="ml-5 w-0 flex items-center justify-end flex-1 text-green-500 text-base font-bold">
-32.9%
-<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M5.293 7.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 5.414V17a1 1 0 11-2 0V5.414L6.707 7.707a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
-</svg>
-</div>
-</div>
-</div>
-<div class="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 ">
-<div class="flex items-center">
-<div class="flex-shrink-0">
-<span class="text-2xl sm:text-3xl leading-none font-bold text-gray-900">385</span>
-<h3 class="text-base font-normal text-gray-500">User signups this week</h3>
-</div>
-<div class="ml-5 w-0 flex items-center justify-end flex-1 text-red-500 text-base font-bold">
--2.7%
-<svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" d="M14.707 12.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 14.586V3a1 1 0 012 0v11.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
-</svg>
-</div>
-</div>
-</div>
-</div>
-<div class="bg-white shadow rounded-lg mb-4 p-4 sm:p-6 h-full">
-<div class="flex items-center justify-between mb-4">
-<h3 class="text-xl font-bold leading-none text-gray-900">Latest Auction Choose</h3>
-<a href="#" class="text-sm font-medium text-cyan-600 hover:bg-gray-100 rounded-lg inline-flex items-center p-2">
-View all
-</a>
-</div>
-<div class="flow-root">
-<ul role="list" class="divide-y divide-gray-200">
-<li class="py-3 sm:py-4">
-<div class="flex items-center space-x-4">
-<div class="flex-shrink-0">
-<img class="h-8 w-8 rounded-full" src="https://demo.themesberg.com/windster/images/users/neil-sims.png" alt="Neil image">
-</div>
-<div class="flex-1 min-w-0">
-<p class="text-sm font-medium text-gray-900 truncate">
-Daryl Estolonio
-</p>
-<p class="text-sm text-gray-500 truncate">
-daryl@gmail.com
-</p>
-</div>
-<div class="inline-flex items-center text-base font-semibold text-gray-900">
-320
-</div>
-</div>
-</li>
-<li class="py-3 sm:py-4">
-<div class="flex items-center space-x-4">
-<div class="flex-shrink-0">
-<img class="h-8 w-8 rounded-full" src="https://demo.themesberg.com/windster/images/users/bonnie-green.png" alt="Neil image">
-</div>
-<div class="flex-1 min-w-0">
-<p class="text-sm font-medium text-gray-900 truncate">
-Ivan Amolar
-</p>
-<p class="text-sm text-gray-500 truncate">
-ivan@gmail.com
-</p>
-</div>
-<div class="inline-flex items-center text-base font-semibold text-gray-900">
-$3467
-</div>
-</div>
-</li>
-<li class="py-3 sm:py-4">
-<div class="flex items-center space-x-4">
-<div class="flex-shrink-0">
-<img class="h-8 w-8 rounded-full" src="https://demo.themesberg.com/windster/images/users/michael-gough.png" alt="Neil image">
-</div>
-<div class="flex-1 min-w-0">
-<p class="text-sm font-medium text-gray-900 truncate">
-Hans Aeron Bangay
-</p>
-<p class="text-sm text-gray-500 truncate">
-hans@gmail.com
-</p>
-</div>
-<div class="inline-flex items-center text-base font-semibold text-gray-900">
-$67
-</div>
-</div>
-</li>
-<li class="py-3 sm:py-4">
-<div class="flex items-center space-x-4">
-<div class="flex-shrink-0">
-<img class="h-8 w-8 rounded-full" src="https://demo.themesberg.com/windster/images/users/thomas-lean.png" alt="Neil image">
-</div>
-<div class="flex-1 min-w-0">
-<p class="text-sm font-medium text-gray-900 truncate">
-Philip Gomera
-</p>
-<p class="text-sm text-gray-500 truncate">
-philip@gmail.com
-</p>
-</div>
-<div class="inline-flex items-center text-base font-semibold text-gray-900">
-$2367
-</div>
-</div>
-</li>
-<li class="pt-3 sm:pt-4 pb-0">
-<div class="flex items-center space-x-4">
-<div class="flex-shrink-0">
-<img class="h-8 w-8 rounded-full" src="https://demo.themesberg.com/windster/images/users/lana-byrd.png" alt="Neil image">
-</div>
-<div class="flex-1 min-w-0">
-<p class="text-sm font-medium text-gray-900 truncate">
-Jhona Lazaro
-</p>
-<p class="text-sm text-gray-500 truncate">
-jhona@gmail.com
-</p>
-</div>
-<div class="inline-flex items-center text-base font-semibold text-gray-900">
-$367
-</div>
-</div>
-</li>
-<li class="py-3 sm:py-4">
-<div class="flex items-center space-x-4">
-<div class="flex-shrink-0">
-<img class="h-8 w-8 rounded-full" src="https://demo.themesberg.com/windster/images/users/thomas-lean.png" alt="Neil image">
-</div>
-<div class="flex-1 min-w-0">
-<p class="text-sm font-medium text-gray-900 truncate">
-Troy Dugan
-</p>
-<p class="text-sm text-gray-500 truncate">
-troy@gmail.com
-</p>
-</div>
-<div class="inline-flex items-center text-base font-semibold text-gray-900">
-$2367
-</div>
-</div>
-</li>
-<li class="py-3 sm:py-4">
-<div class="flex items-center space-x-4">
-<div class="flex-shrink-0">
-<img class="h-8 w-8 rounded-full" src="https://demo.themesberg.com/windster/images/users/thomas-lean.png" alt="Neil image">
-</div>
-<div class="flex-1 min-w-0">
-<p class="text-sm font-medium text-gray-900 truncate">
-Geo Ong
-</p>
-<p class="text-sm text-gray-500 truncate">
-geo@gmail.com
-</p>
-</div>
-<div class="inline-flex items-center text-base font-semibold text-gray-900">
-$2367
-</div>
-</div>
-</li>
-<div>
-    
-</ul>
-
-</div>
-</div>
-        </div>
-    </div>
-</main>
-</body>
-</html>
 </div>
 </main>
 <?php include('../../Layouts/footer.php');

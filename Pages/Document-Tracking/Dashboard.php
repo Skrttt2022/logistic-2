@@ -123,11 +123,11 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
             </div>
         </div>
         <div class="mt-8">
-            <h4 class="text-gray-600">Form</h4>
+            <h4 class="text-gray-600">Tracking</h4>
             <div class="mt-4">
                 <div class="flex px-4 py-4 space-x-4 overflow-x-auto bg-white rounded-md">
                     <button class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500">
-                        <a class href="/logistic-2/Pages/Document-Tracking/Document_form.php"> Request Document </button></a>
+                        <a class href="/Logistic-2/Pages/Document-Tracking/Tracking_document.php"> Track Document </button></a>
                   
                                 </div>
                             </div>
@@ -137,25 +137,16 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
                 </div>
                 
                 <div class="mt-8">
-                    <h4 class="text-gray-600">Paginations</h4>
-                    <div class="mt-4">
-                        <div class="flex px-4 py-4 overflow-x-auto bg-white rounded-md">
-                            <div class="flex mr-4 rounded">
-                                <a href="#" class="px-3 py-2 ml-0 leading-tight text-indigo-700 bg-white border border-r-0 border-gray-200 rounded-l hover:bg-indigo-500 hover:text-white">
-                                    <span>Previous</span>
-                                </a>
-                                <a href="#" class="px-3 py-2 leading-tight text-indigo-700 bg-white border border-r-0 border-gray-200 hover:bg-indigo-500 hover:text-white"><span>1</span>
-                            </a>
-                            <a href="#" class="px-3 py-2 leading-tight text-indigo-700 bg-white border border-r-0 border-gray-200 hover:bg-indigo-500 hover:text-white"><span>2</span>
-                        </a>
-                        <a href="#" class="px-3 py-2 leading-tight text-indigo-700 bg-white border border-r-0 border-gray-200 hover:bg-indigo-500 hover:text-white"><span>3</span>
-                        </a>
-                        <a href="#" class="px-3 py-2 leading-tight text-indigo-700 bg-white border border-gray-200 rounded-r hover:bg-indigo-500 hover:text-white"><span>Next</span>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
+            <h4 class="text-gray-600">Request</h4>
+            <div class="mt-4">
+                <div class="flex px-4 py-4 space-x-4 overflow-x-auto bg-white rounded-md">
+                    <button class="px-4 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-200 transform bg-indigo-600 rounded-md hover:bg-indigo-500 focus:outline-none focus:bg-indigo-500">
+                        <a class="" href="/logistic-2/Pages/Document-Tracking/Document_form.php"> Request Document </a></button>
+                  
+                                </div>
+                            </div>
+                        </div>
+
 </div>
 </main>
 <?php include('../../Layouts/footer.php');

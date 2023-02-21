@@ -55,15 +55,15 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
     <div class="relative h-full overflow-hidden bg-cover py-6 rounded-xl" style="background-image: url('https://images.unsplash.com/photo-1655635643532-fa9ba2648cbe?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=2232&amp;q=80')">
         <span class="absolute top-0 left-0 w-full h-full bg-center bg-cover bg-gradient-dark-gray opacity-80"></span>
         <div class="relative z-10 flex flex-col flex-auto h-full p-4">
-            <h2 class="pt-2 mb-6 font-bold text-white">Discover, create and sell <br> your own NFTs!</h2>
+            <h2 class="pt-2 mb-6 font-bold text-white">Item sell</h2>
             <a class="mt-auto mb-0 font-semibold leading-normal text-white group text-size-sm" href="javascript:;">
-                Read More
+                view More
                 <i class="fas fa-arrow-right ease-bounce text-size-sm group-hover:translate-x-1.25 ml-1 leading-normal transition-all duration-200" aria-hidden="true"></i>
             </a>
         </div>
     </div>
 </div></div>
-    </div><h3 class="draggable font-weight-400 mb-4" draggable="true">NFTs for sale</h3><div class="flex flex-wrap -mx-3 removable">
+    </div><h3 class="draggable font-weight-400 mb-4" draggable="true">Item for sale</h3><div class="flex flex-wrap -mx-3 removable">
       <div class="w-full max-w-full px-3 mb-6 lg:w-1/3 sm:flex-none drop-zone"><div class="relative flex flex-col min-w-0 break-words bg-white border-0 shadow-soft-xl px-3 py-3 rounded-2xl bg-clip-border">
     <div class="relative">
       <a class="block shadow-xl rounded-2xl">
@@ -73,7 +73,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
     <div class="flex-auto px-1 pt-6">
       <p class="relative z-10 mb-2 leading-normal text-transparent bg-gradient-dark-gray text-size-sm bg-clip-text">UnderWater</p>
       <a href="javascript:;">
-        <h5>by Anthoine Museu</h5>
+        <h5>Item #1</h5>
       </a>
       
       <div class="flex items-center justify-between mt-4">
@@ -91,7 +91,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
     <div class="flex-auto px-1 pt-6">
       <p class="relative z-10 mb-2 leading-normal text-transparent bg-gradient-dark-gray text-size-sm bg-clip-text">Headmaw</p>
       <a href="javascript:;">
-        <h5>by Lucien Roberto</h5>
+        <h5>Item #2</h5>
       </a>
       
       <div class="flex items-center justify-between">
@@ -110,7 +110,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
     <div class="flex-auto px-1 pt-6">
       <p class="relative z-10 mb-2 leading-normal text-transparent bg-gradient-dark-gray text-size-sm bg-clip-text">Sonte of Vincento</p>
       <a href="javascript:;">
-        <h5>By Serierre Laumen</h5>
+        <h5>Item #3</h5>
       </a>
       
       <div class="flex items-center justify-between">
@@ -128,7 +128,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
     <div class="flex-auto px-1 pt-6">
       <p class="relative z-10 mb-2 leading-normal text-transparent bg-gradient-dark-gray text-size-sm bg-clip-text">Camera</p>
       <a href="javascript:;">
-        <h5>By Loopple</h5>
+        <h5>Item #4</h5>
       </a>
       
       <div class="flex items-center justify-between">
@@ -146,7 +146,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
     <div class="flex-auto px-1 pt-6">
       <p class="relative z-10 mb-2 leading-normal text-transparent bg-gradient-dark-gray text-size-sm bg-clip-text">Stones</p>
       <a href="javascript:;">
-        <h5>By Chris Karl</h5>
+        <h5>Item #5</h5>
       </a>
       
       <div class="flex items-center justify-between">
@@ -163,7 +163,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
     <div class="flex-auto px-1 pt-6">
       <p class="relative z-10 mb-2 leading-normal text-transparent bg-gradient-dark-gray text-size-sm bg-clip-text">Robsol</p>
       <a href="javascript:;">
-        <h5>By Alien Jullie</h5>
+        <h5>Item #6</h5>
       </a>
       
       <div class="flex items-center justify-between">

@@ -146,8 +146,7 @@ if (mysqli_num_rows($result)) {
                                     <span class="inline-flex px-2 text-xs font-semibold leading-5 text-green-800 bg-green-100 rounded-full"><?php echo $row['Status']?></span>
                                 </td>
                                 <td class="px-6 py-4 text-sm leading-5 text-gray-500 border-b border-gray-200 whitespace-nowrap"><?php echo $row['Reserve']?></td>
-                                <td class="px-6 py-4 text-sm font-medium leading-5 text-right border-b border-gray-200 whitespace-nowrap">
-                                    <a href="#" class="text-indigo-600 hover:text-indigo-900">Edit</a>
+                              
                                 </td>
                             </tr>
                             
