@@ -40,7 +40,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
                           </div>
                           <div class="mx-5">
                           <button class="bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-700 hover:border-blue-500 rounded">
-                          <a class href="/logistic-2/Pages/Fleet-Management/vehicle_tracking.php">
+                          <a class href="/Logistic-2/Pages/Fleet-Management/map/">
   tracking Vehicles</a>
 </button>
 </div>

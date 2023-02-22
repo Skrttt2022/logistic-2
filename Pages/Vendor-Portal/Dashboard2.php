@@ -188,6 +188,14 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
 View all
 </a>
 </div>
+
+<?php 
+
+$query = "SELECT * FROM login ORDER BY ID ASC";
+$result = mysqli_query($db, $query);
+if (mysqli_num_rows($result)) {
+  while ($row = mysqli_fetch_assoc($result)) {
+?>
 <div class="flow-root">
 <ul role="list" class="divide-y divide-gray-200">
 <li class="py-3 sm:py-4">
@@ -197,92 +205,18 @@ View all
 </div>
 <div class="flex-1 min-w-0">
 <p class="text-sm font-medium text-gray-900 truncate">
-Neil Sims
+<?php echo $row['Fname']?>
 </p>
 <p class="text-sm text-gray-500 truncate">
-email@windster.com
+<?php echo $row['Email']?>
 </p>
 </div>
 <div class="inline-flex items-center text-base font-semibold text-gray-900">
-320
+<?php echo $row['Role']?>
 </div>
 </div>
 </li>
-<li class="py-3 sm:py-4">
-<div class="flex items-center space-x-4">
-<div class="flex-shrink-0">
-<img class="h-8 w-8 rounded-full" src="https://demo.themesberg.com/windster/images/users/bonnie-green.png" alt="Neil image">
-</div>
-<div class="flex-1 min-w-0">
-<p class="text-sm font-medium text-gray-900 truncate">
-Bonnie Green
-</p>
-<p class="text-sm text-gray-500 truncate">
-email@windster.com
-</p>
-</div>
-<div class="inline-flex items-center text-base font-semibold text-gray-900">
-3467
-</div>
-</div>
-</li>
-<li class="py-3 sm:py-4">
-<div class="flex items-center space-x-4">
-<div class="flex-shrink-0">
-<img class="h-8 w-8 rounded-full" src="https://demo.themesberg.com/windster/images/users/michael-gough.png" alt="Neil image">
-</div>
-<div class="flex-1 min-w-0">
-<p class="text-sm font-medium text-gray-900 truncate">
-Michael Gough
-</p>
-<p class="text-sm text-gray-500 truncate">
-email@windster.com
-</p>
-</div>
-<div class="inline-flex items-center text-base font-semibold text-gray-900">
-67
-</div>
-</div>
-</li>
-<li class="py-3 sm:py-4">
-<div class="flex items-center space-x-4">
-<div class="flex-shrink-0">
-<img class="h-8 w-8 rounded-full" src="https://demo.themesberg.com/windster/images/users/thomas-lean.png" alt="Neil image">
-</div>
-<div class="flex-1 min-w-0">
-<p class="text-sm font-medium text-gray-900 truncate">
-Thomes Lean
-</p>
-<p class="text-sm text-gray-500 truncate">
-email@windster.com
-</p>
-</div>
-<div class="inline-flex items-center text-base font-semibold text-gray-900">
-2367
-</div>
-</div>
-</li>
-<li class="pt-3 sm:pt-4 pb-0">
-<div class="flex items-center space-x-4">
-<div class="flex-shrink-0">
-<img class="h-8 w-8 rounded-full" src="https://demo.themesberg.com/windster/images/users/lana-byrd.png" alt="Neil image">
-</div>
-<div class="flex-1 min-w-0">
-<p class="text-sm font-medium text-gray-900 truncate">
-Lana Byrd
-</p>
-<p class="text-sm text-gray-500 truncate">
-email@windster.com
-</p>
-</div>
-<div class="inline-flex items-center text-base font-semibold text-gray-900">
-367
-</div>
-</div>
-</li>
-</ul>
-</div>
-</div>
+<?php }}?>
                     
     <!--Nav-->
 

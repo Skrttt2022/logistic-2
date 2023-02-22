@@ -23,7 +23,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
             <div>
                 <h3 class="text-3xl font-medium text-gray-700">Document Tracking</h3>
                 <div class="mt-4">
-                    <h4 class="text-gray-600">Process</h4>
+                    <h4 class="text-gray-600">Guide</h4>
                     <div class="mt-4">
                         <div class="px-4 py-4 overflow-x-auto bg-white rounded-md whitespace-nowrap">
                             <div class="inline-flex w-full max-w-sm ml-3 overflow-hidden bg-white rounded-lg shadow-md">
@@ -97,7 +97,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
                         <svg class="h-10 w-10 text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <polyline points="9 11 12 14 20 6" />  <path d="M20 12v6a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h9" /></svg>
                         </div>
                         <div class="mx-5">
-                        <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"> Approve</button>
+                        <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"><a href="/logistic-2/Pages/Document-Tracking/approve.php">Approve</a></button>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
                     <svg class="h-10 w-10 text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M15 4.55a8 8 0 0 0 -6 14.9m0 -4.45v5h-5" />  <path d="M13 19.95a8 8 0 0 0 5.3 -12.8" stroke-dasharray=".001 4.13" /></svg>
                     </div>
                     <div class="mx-5">
-                    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Pending</button>
+                    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"><a href="/logistic-2/Pages/Document-Tracking/pending.php">Pending</a></button>
                     </div>
                 </div>
             </div>
@@ -117,7 +117,7 @@ if (isset($_SESSION['email'], $_SESSION['password'])) { ?>
                     <svg class="h-10 w-10 text-white"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M14 3v4a1 1 0 0 0 1 1h4" />  <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />  <path d="M10 12l4 4m0 -4l-4 4" /></svg>
                     </div>
                     <div class="mx-5">
-                    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded">Failed</button>
+                    <button class="bg-transparent hover:bg-blue-500 text-blue-700 font-semibold hover:text-white py-2 px-4 border border-blue-500 hover:border-transparent rounded"><a href="/logistic-2/Pages/Document-Tracking/failed.php">Failed</a></button>
                     </div>
                 </div>
             </div>
